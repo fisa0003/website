@@ -1,0 +1,126 @@
+img {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(239, 211, 211);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #34008d;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  background-color: #a80000;
+}
+
+.meny {
+  padding: 20px;
+}
+
+.meny h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #34008d;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #34008d;
+}
+
+.logo2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #34008d;
+}
+
+.logo1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 13rem;
+  color: #34008d;
+}
+
+.text1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 2.7rem;
+  color: #34008d;
+}
+
+.buysquare {
+  background-color: #7297e7;
+  padding: 60px;
+  display: inline-block;
+  border-radius: 40px;
+}
+
+.headingwhite {
+  color: white;
+  font-size: 2rem;
+}
+
+.pwhite {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.product {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(202, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-family: arial;
+  display: block;
+}
+
+.show-label .label {
+  display: block;
+}
+
+.label2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(74, 0, 202);
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-family: arial;
+  display: block;
+}

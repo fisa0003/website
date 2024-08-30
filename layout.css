@@ -1,0 +1,40 @@
+.meny {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.kategori {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.padding {
+  padding: 30px;
+}
+
+.toppadding {
+  padding-top: 40px;
+}
+
+.grid-1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.padding2 {
+  padding: 100px;
+}
