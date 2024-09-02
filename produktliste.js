@@ -28,6 +28,7 @@ function showProduct(product) {
   copy.querySelector("img").alt = product.productdisplayname;
   copy.querySelector("h2").textContent = product.productdisplayname;
   copy.querySelector("p").textContent = product.price + " kr";
+  copy.querySelector("a").href = `produkt.html?${product.id}`;
 
   document.querySelector("main").appendChild(copy);
 }
