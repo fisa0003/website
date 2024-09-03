@@ -29,6 +29,7 @@ function showProduct(product) {
   copy.querySelector("h2").textContent = product.productdisplayname;
   copy.querySelector("p").textContent = product.price + " kr";
   copy.querySelector("a").href = `produkt.html?${product.id}`;
+  copy.querySelector(".readmore").setAttribute("href", `produkt.html?id=${product.id}`);
 
   document.querySelector("main").appendChild(copy);
 }

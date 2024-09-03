@@ -124,3 +124,9 @@ h4 {
   font-family: arial;
   display: block;
 }
+
+.category,
+.articletype,
+.price {
+  color: white;
+}
