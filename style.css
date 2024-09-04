@@ -34,6 +34,28 @@ h4 {
   font-size: 1.2rem;
 }
 
+li a {
+  display: inline-block;
+  padding: 20px 100px;
+  background-color: #34008d;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+li a:hover {
+  background-color: #a80000;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .button:hover {
   background-color: #a80000;
 }
@@ -97,36 +119,42 @@ h4 {
   position: relative;
 }
 
-.label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: rgb(202, 0, 0);
-  color: white;
-  padding: 5px 10px;
-  font-size: 1.2rem;
-  font-family: arial;
-  display: block;
+.product {
+  position: relative;
 }
 
-.show-label .label {
+.product.soldout::before,
+.product.sale::after {
   display: block;
-}
-
-.label2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.product.soldout::before {
+  content: "SOLD OUT";
   left: 10px;
-  background-color: rgb(74, 0, 202);
-  color: white;
-  padding: 5px 10px;
-  font-size: 1.2rem;
-  font-family: arial;
-  display: block;
+  background-color: rgb(188, 0, 0);
+}
+
+.product.sale::after {
+  content: "ON SALE";
+  right: 10px;
+  background-color: rgb(0, 16, 188);
 }
 
 .category,
 .articletype,
 .price {
   color: white;
+}
+
+.readmore {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #34008d;
 }
