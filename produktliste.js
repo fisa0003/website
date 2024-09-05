@@ -1,8 +1,9 @@
 window.addEventListener("DOMContentLoaded", init);
 
-//const id = 1164;
-const uri = `https://kea-alt-del.dk/t7/api/products?`;
-//const imgURI = `https://kea-alt-del.dk/t7/images/webp/640/.webp`;
+const params = new URLSearchParams(document.location.search);
+const category = params.get("category");
+
+const uri = `https://kea-alt-del.dk/t7/api/products?category=${category}`;
 
 function init() {
   fetch(uri)
@@ -41,6 +42,12 @@ function showProduct(product) {
 
   if (product.discount) {
     copy.querySelector("article").classList.add("sale");
+  }
+
+  if (params.has("category")) {
+    url = `https://kea-alt-del.dk/t7/api/products?category=${category}`;
+  } else {
+    url = "https://kea-alt-del.dk/t7/api/products";
   }
 
   document.querySelector("main").appendChild(copy);

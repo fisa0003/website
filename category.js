@@ -18,6 +18,7 @@ if (params.has("category")) {
 }
 */
 
+const categoryList = document.querySelector("#categoryList");
 const params = new URLSearchParams(document.location.search);
 const category = params.get("category");
 let url = undefined;
@@ -32,6 +33,8 @@ fetch("https://kea-alt-del.dk/t7/api/categories")
 
 if (params.has("category")) {
   url = `https://kea-alt-del.dk/t7/api/products?category=${category}`;
-  //} else {
-  // url = "https://kea-alt-del.dk/t7/api/products";
+} else {
+  url = "https://kea-alt-del.dk/t7/api/products";
 }
+
+//
